@@ -1,7 +1,7 @@
-####This is my personal management suite
+#### This is my personal management suite
 
-#####Current apps
+##### Current apps
 - Accounting
 
-#####Requirements
+##### Requirements
 - Django 1.11
