@@ -25,7 +25,7 @@ SECRET_KEY = '9pgy_)&c*g4yacr92=wp^(@u#@1+1uw(m5ebj=l^_iv$4qth0i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'mng.jesusmg.net',]
 
 
 # Application definition
