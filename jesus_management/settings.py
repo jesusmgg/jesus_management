@@ -25,7 +25,7 @@ SECRET_KEY = '9pgy_)&c*g4yacr92=wp^(@u#@1+1uw(m5ebj=l^_iv$4qth0i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'mng.jesusmg.net',]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'mng.jesusmg.net', ]
 
 
 # Application definition
@@ -120,3 +120,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+STATICFILES_DIRS = [os.path.join(os.path.join(BASE_DIR, 'static'))]
+STATIC_ROOT = os.path.join(os.path.join(BASE_DIR, 'staticfiles'))
+MEDIA_ROOT = BASE_DIR + "/media/"
+MEDIA_URL = "/media/"
+
+FILE_UPLOAD_HANDLERS = ("django.core.files.uploadhandler.MemoryFileUploadHandler", "django.core.files.uploadhandler"
+                                                                                   ".TemporaryFileUploadHandler")
