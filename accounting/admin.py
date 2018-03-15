@@ -10,6 +10,7 @@ class TaxAdmin(admin.ModelAdmin):
 
 class RecordItemInline(admin.TabularInline):
     model = RecordItem
+    extra = 1
 
 
 @admin.register(Income)

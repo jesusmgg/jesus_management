@@ -28,7 +28,7 @@ class Record(models.Model):
 class RecordItem(models.Model):
     description = models.CharField(max_length=200)
     ammount = models.DecimalField(default=0.0, decimal_places=2, max_digits=15)
-    tax = models.ForeignKey(Tax, on_delete=models.PROTECT)
+    tax = models.ManyToManyField(Tax)
     record = models.ForeignKey(Record, on_delete=models.CASCADE)
 
 
