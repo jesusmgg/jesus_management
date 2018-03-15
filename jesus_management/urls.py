@@ -19,3 +19,7 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
+
+# Change admin site title
+admin.site.site_header = "Management"
+admin.site.site_title = "Jesús González"
